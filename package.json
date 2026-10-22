@@ -1,0 +1,15 @@
+{
+  "name": "electron-file-explorer",
+  "version": "1.0.0",
+  "description": "Практическая работа № 3. Файловый обозреватель на Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Бурняшева Елена Александровна",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "electron": "^45.0.0"
+  }
+}
