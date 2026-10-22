@@ -1,0 +1,116 @@
+:root {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #253047;
+  background: #f2f4f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 36px;
+}
+
+.header {
+  margin-bottom: 28px;
+}
+
+.subtitle {
+  margin: 0 0 8px;
+  color: #6554c0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 32px;
+}
+
+.student {
+  margin: 0;
+  color: #647087;
+}
+
+.panel {
+  padding: 28px;
+  border: 1px solid #e0e5ef;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgb(37 48 71 / 5%);
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.description {
+  margin: 0 0 24px;
+  color: #647087;
+  line-height: 1.5;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #6554c0;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5140a6;
+}
+
+button:focus-visible {
+  outline: 3px solid #b8acf3;
+  outline-offset: 3px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.status {
+  margin: 20px 0;
+  color: #647087;
+  line-height: 1.5;
+}
+
+.file-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.file-list li {
+  padding: 12px 14px;
+  border-bottom: 1px solid #edf0f5;
+  overflow-wrap: anywhere;
+}
+
+.file-list .directory {
+  color: #5140a6;
+  background: #f7f5ff;
+  font-weight: 600;
+}
+
+.file-list .file {
+  color: #253047;
+}
+
+.status.error {
+  color: #b42318;
+}
