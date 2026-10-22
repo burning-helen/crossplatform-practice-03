@@ -4,12 +4,37 @@
   "description": "Практическая работа № 3. Файловый обозреватель на Electron",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
-  },
+  "start": "electron .",
+  "dist": "electron-builder --win nsis"
+},
   "author": "Бурняшева Елена Александровна",
   "license": "UNLICENSED",
   "private": true,
+  "build": {
+  "appId": "ru.fa.burnyasheva.fileexplorer",
+  "productName": "Electron File Explorer",
+  "directories": {
+    "output": "dist"
+  },
+  "files": [
+    "main.js",
+    "preload.js",
+    "renderer.js",
+    "index.html",
+    "styles.css",
+    "package.json"
+  ],
+  "win": {
+    "target": "nsis"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true
+  }
+},
   "devDependencies": {
-    "electron": "^45.0.0"
+    "electron": "^45.0.0",
+    "electron-builder": "^26.15.3"
   }
 }
